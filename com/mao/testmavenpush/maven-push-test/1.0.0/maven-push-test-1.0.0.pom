@@ -6,4 +6,17 @@
   <version>1.0.0</version>
   <packaging>aar</packaging>
   <dependencies/>
+ <!-- 项目分发的仓库配置 -->
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>public</name>
+            <url>http://[repository-server]/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Snapshots</name>
+            <url>http://[repository-server]/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
